@@ -19,6 +19,7 @@ class userRegistration{
             std::cin >> password;
 
             std::cout << "This ain't working yet :(";
+            std::cout << "change";
         }
        
 };

@@ -37,6 +37,7 @@ class loginManager{
                 getline(file, userInfo);
             }
             file.close();
+            cout << "done";
             return userInfo;
         }
     

@@ -47,6 +47,7 @@ void welcomeScreen(){
 
 int main(){
     welcomeScreen();
+    cout << "done";
     
     return 0;
 }
