@@ -1,31 +1,52 @@
 #include <iostream>
 #include <fstream>
 #include "registration.h"
-#include "user.h"
+#include "loginmanager.h"
 #include <string>
 using namespace std;
 
 
-int main(){
-    User user;
-    userRegistration login;
-    
+void welcomeScreen(){
+    cout << R"(*********************************************
+                                WELCOME                              
+               
+               ********************************************* 
+                                  Menu                            
+                
+                Type in the number corresponding to your choice.
+                
+                1. REGISTER
+                2. LOGIN
+                3. DISPLAY MENU )";
 
-    login.registerUser(user);
+    int options;
+    cout << "Make your selection: ";
+    cin >> options;
     
-    
-    ofstream calorieFile;
-    calorieFile.open("caloriecount.txt");
-    calorieFile << "Hello. Writing to this file.\n";
-
-    if (calorieFile.is_open()){
-        calorieFile << "File successfully opened!\n";
-        calorieFile << "Now ready to read in data.\n";
-        calorieFile.close();
-    } else{
-        cout << "Enter opening file";
+    switch(options){
+        case 1:{
+            userRegistration user_obj;
+            userRegistration login;
+            login.registerUser();
+            break;
+        } 
+        case 2:{
+            loginManager login_obj;
+            
+        }
+        case 3:
+            cout << "Here's the menu: ";
+            break;
+        default:
+            cout << "Please enter the integer corresponding to your choice.";
+        
     }
+    
+}
 
+
+int main(){
+    welcomeScreen();
     
     return 0;
 }
