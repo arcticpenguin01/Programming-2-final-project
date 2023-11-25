@@ -17,6 +17,8 @@ class userRegistration{
             std::cout << "Enter password: ";
             std::ofstream b_file("passwords.dat", std::ios::app);
             std::cin >> password;
+
+            std::cout << "This ain't working yet :(";
         }
        
 };
