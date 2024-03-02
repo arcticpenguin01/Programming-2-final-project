@@ -17,6 +17,7 @@ Food classicLemonade{170,"Classic Lemonda"};
 // Dessert
 Food blackTieMousseCake{750,"Black Tie Mouse Cake"};
 Food strawberryCreamCake{470,"Strawberry Cream Cake"};
+Food birthdayCake{560,"Birthday Cake"};
 void foodSelect();
 void displayMenu();
  
