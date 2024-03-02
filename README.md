@@ -1,4 +1,6 @@
-
+[![OpenSSF Scorecard]
+(htt‌ps://api.securityscorecards.dev/projects/github.com/{articpenguin01}/{Programming-2-final-project}/badge)]
+(htt‌ps://securityscorecards.dev/viewer/?uri=github.com/{articpenguin01}/{Programming-2-final-project})
 # Programming-2-final-project
 Olive garden calorie counter project Report 
 
